@@ -1,13 +1,111 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.head-wrapper{
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  color: white;
+  padding-bottom: 5px;
+
 }
+
+.head-title{
+  width: 80%;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-left: 100px;
+  text-decoration: none;
+  color: white;
+}
+.head-cart{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 2rem;
+}
+
+.MuiSvgIcon-root{
+  text-align:right;
+  margin-top:12px;
+  width: 100%;
+  text-decoration:none;
+  color: white;
+}
+
+.head-cart>.count{
+  text-align:right;
+  margin-top:12px;
+  width: 100%;
+  text-decoration:none;
+  color: white;
+  font-size: 22px;
+}
+
+@media(min-width:400px){
+  .head-title{
+    width: 90%;
+  }
+  .head-cart{
+    width: 10%; 
+  }
+}
+
+@media(min-width:900px){
+  .head-title{
+    width: 95%;
+  }
+  .head-cart{
+    width: 5%; 
+  }
+}
+
+
+/* Home css */
+.home-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  overflow-wrap: break-word;
+}
+
+.item-wrapper{
+  height: 200px;
+  width: 200px;
+  box-shadow: 1px 1px 15px 5px #888;
+  margin: 50px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.item-wrapper:hover{
+  box-shadow:  1px 1px 6px 6px #888888;
+  background-color: white;
+}
+
+.item-image{
+  height: 150px;
+  width: 150px;
+  margin: 25px 0px 0px 25px;
+  border-radius: 50%;
+}
+
+.item-link{
+  text-decoration: none;
+}
+
+.item-name{
+  text-align: center;
+  margin: 2px;
+  color: black;
+}
+
